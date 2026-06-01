@@ -24,7 +24,7 @@ jobs:
                 whoami
 
     macos: 
-        runs-on: macos - latest
+        runs-on: macos-latest
         steps: 
             - name: Print info - MacOS
               run: |
