@@ -5,7 +5,7 @@ on:
 
 jobs:
     generate-file:
-        runs-on: ubuntu_latest
+        runs-on: ubuntu-latest
         steps:
             - name: Create a test report
               run: echo "All tests passed successfully on $(date)" > test-report.txt
