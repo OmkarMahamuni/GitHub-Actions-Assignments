@@ -1,5 +1,7 @@
-def test_addition():
-    assert 1 + 1 == 2, "Math is broken!"
+import sys
 
-def test_string():
-    assert "DevOps".upper() == "DEVOPS"
+message = "CI test failed"
+print(message)
+
+if "passed" not in message:
+    sys.exit(1)
