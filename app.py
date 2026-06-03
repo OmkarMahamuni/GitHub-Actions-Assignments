@@ -1,0 +1,5 @@
+def test_addition():
+    assert 1 + 1 == 2, "Math is broken!"
+
+def test_string():
+    assert "DevOps".upper() == "DEVOPS"
