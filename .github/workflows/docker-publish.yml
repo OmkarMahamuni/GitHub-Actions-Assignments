@@ -12,6 +12,10 @@ jobs:
             - name: Checkout Code
               uses: actions/checkout@v4
 
+            - name: Calculate Short Commit SHA
+              id: vars
+              run: echo "sha_short=$(echo ${{ github.sha }} | cut -c1-7)" >> $GITHUB_OUTPUT
+    
             - name: Setup Docker Buildx
               uses: docker/setup-buildx-action@v3
 
